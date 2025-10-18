@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: wil
-          image: nginxdemos/hello:plain-text
+          image: nginxdemos/hello:0.4-plain-text
           ports:
             - containerPort: 80
