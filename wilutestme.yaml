@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: wil
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: wil
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: wil
-          image: nginxdemos/hello:0.4-plain-text
+          image: nginxdemos/hello:plain-text
           ports:
             - containerPort: 80
